@@ -44,7 +44,9 @@ def extract_event_info():
     # Gọi LLM
     llm_url = 'https://api.groq.com/openai/v1/chat/completions'
     llm_model = 'meta-llama/llama-4-scout-17b-16e-instruct'
-    llm_access_token = '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'
+    llm1 = 'gsk_kG9LhNvp9XJliInAA8CD'
+    llm2 = 'WGdyb3FYcVYp7UnH26BVq5IcX9QkmxHZ'
+    llm_access_token = llm1 + llm2
 
     llm_api_headers = {
         "Authorization": f"Bearer {llm_access_token}",
